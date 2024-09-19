@@ -1,0 +1,28 @@
+<!-- views/custom_sale_views.xml -->
+<odoo>
+    <record id="view_custom_sales_wizard_form" model="ir.ui.view">
+        <field name="name">custom.sales.wizard.form</field>
+        <field name="model">custom.sales.wizard</field>
+        <field name="arch" type="xml">
+
+            <form string="Sales">
+
+                    <h3 style="text-align: center;">Please choose whether Direct Sale or Event Sale.</h3>
+
+                <footer>
+                    <button name="action_direct_sale" type="object" string="Direct Sale" class="btn-primary"/>
+                    <button name="action_event_sale" type="object" string="Event Sale" class="btn-secondary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to trigger the wizard -->
+<!--    <record id="action_trigger_custom_sales_wizard" model="ir.actions.act_window">-->
+<!--        <field name="name">Sale Wizard</field>-->
+<!--        <field name="res_model">custom.sales.wizard</field>-->
+<!--        <field name="view_mode">form</field>-->
+<!--        <field name="target">new</field>-->
+<!--    </record>-->
+</odoo>
