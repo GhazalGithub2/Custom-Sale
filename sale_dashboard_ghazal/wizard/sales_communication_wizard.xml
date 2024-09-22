@@ -1,0 +1,37 @@
+<!-- views/custom_sale_views.xml -->
+<odoo>
+    <record id="action_trigger_sale_communication_wizard" model="ir.actions.act_window">
+        <field name="name">Start Communication Sales Wizard</field>
+        <field name="res_model">sales.communication.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <record id="view_sales_communication_wizard_form" model="ir.ui.view">
+        <field name="name">sales.communication.wizard.form</field>
+        <field name="model">sales.communication.wizard</field>
+        <field name="arch" type="xml">
+
+            <form string="Start Sales Communication">
+
+                    <h3 style="text-align: center;">Please Input the Sale Subject.</h3>
+                    <group>
+                        <field name="subject" placeholder="sales subject"/>
+                        <field name="message" placeholder="This is an optional message"/>
+                    </group>
+                <footer>
+                    <button name="action_done" type="object" string="Done" class="btn-primary"/>
+                    <button string="Cancel" class="btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action to trigger the wizard -->
+<!--    <record id="action_trigger_custom_sales_wizard" model="ir.actions.act_window">-->
+<!--        <field name="name">Sale Wizard</field>-->
+<!--        <field name="res_model">custom.sales.wizard</field>-->
+<!--        <field name="view_mode">form</field>-->
+<!--        <field name="target">new</field>-->
+<!--    </record>-->
+</odoo>

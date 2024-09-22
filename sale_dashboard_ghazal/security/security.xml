@@ -1,0 +1,12 @@
+<odoo>
+    <data noupdate="0">
+    <!-- Define new group -->
+    <record id="group_contact_edit" model="res.groups">
+        <field name="name">Contact Group</field>
+<!--        <field name="category_id" ref="base.module_category_user_type"/>-->
+        <field name="category_id" ref="base.module_category_hidden"/>
+        <field name="users" eval="[(4, ref('base.user_root')), (4, ref('base.user_admin'))]"/>
+        <field name="comment">This group allows users to edit the contact list view inline.</field>
+    </record>
+    </data>
+</odoo>
