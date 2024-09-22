@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-sale_dashboard_ghazal.access_custom_sales_wizard,access_custom_sales_wizard,sale_dashboard_ghazal.model_custom_sales_wizard,base.group_user,1,1,1,1
-sale_dashboard_ghazal.access_direct_sales_wizard,access_direct_sales_wizard,sale_dashboard_ghazal.model_direct_sales_wizard,base.group_user,1,1,1,1
-sale_dashboard_ghazal.access_sales_communication_wizard,access_sales_communication_wizard,sale_dashboard_ghazal.model_sales_communication_wizard,base.group_user,1,1,1,1
-
